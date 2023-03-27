@@ -47,16 +47,22 @@ Deliver:
 
 Deliver:
 
-*   [ ] Function signatures that include:
-    *   Descriptive names.
-    *   Parameter lists.
-    *   Documentation strings that explain its purpose and types of inputs and outputs.
-*   [ ] Pseudocode that captures how each function works.
-    *   Pseudocode != source code.  Do not paste your finished source code into this part of the plan.
-*   Explain what happens in the face of good and bad input.
-    *   Write a few specific examples that occur to you, and use them later when testing
-*   [ ] Tag the last commit in this phase `designed`
-    *   *Grace Points: if this tag is pushed by midnight on the Sunday before the due date, you will receive up to 5 points back*
+* Design ideas
+    * Have everything in the center so that it can be easier for the user to see everything
+    * components- go in order from the assignment requirements 
+        * navbar
+        * navigation drawer
+        * button
+        * floating action button
+        * image carousel
+        * loading spinners
+    * I should organize everything by boxes, 
+    which I've used previously
+    * Possible idea: having a drop down       button that displays all of the component options. When the option is clicked then all of the needed information for the component is listed.
+
+
+
+
 
 
 ## Phase 2: Implementation (tag name `implemented`)
