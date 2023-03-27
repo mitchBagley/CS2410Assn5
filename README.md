@@ -31,6 +31,7 @@ Deliver:
      * loading spinner (3 different ones)
      * divs
      * the pre class (will have to study)
+     * add the other files at the beginning
 * CSS Algorithms: 
      * flexbox
      * color
