@@ -56,75 +56,12 @@ Deliver:
         * floating action button
         * image carousel
         * loading spinners
-    * I should organize everything by boxes, 
-    which I've used previously
-    * Possible idea: having a drop down       button that displays all of the component options. When the option is clicked then all of the needed information for the component is listed.
+    * I should organize everything by boxes, which I've used previously
+    * Possible idea: having a drop down button that displays all of the component options. When the option is clicked then all of the needed information for the component is listed.
 
 
+Don't have enough time to complete the rest of the SDP but here are some final thoughts.
 
+* This was a good project. I learned a lot about animation and the key frame in css is a life saver. I love that thing. The pre tag in html is a good tool to use. I could make this project more organized. The thought of making more files based on the components is a great idea that I should have utitlized. Maybe, if I come back to this down the road, is something that I'll do.
 
-
-
-## Phase 2: Implementation (tag name `implemented`)
-*(15% of your effort)*
-
-**Finally, you can write code!**
-
-Deliver:
-
-*   [ ] More or less working code.
-*   [ ] Note any relevant and interesting events that happened while you wrote the code.
-    *   e.g. things you learned, things that didn't go according to plan
-*   [ ] Tag the last commit in this phase `implemented`
-
-
-## Phase 3: Testing and Debugging (tag name `tested`)
-*(30% of your effort)*
-
-Deliver:
-
-*   [ ] A set of test cases that you have personally run on your computer.
-    *   Include a description of what happened for each test case.
-    *   For any bugs discovered, describe their cause and remedy.
-    *   Write your test cases in plain language such that a non-coder could run them and replicate your experience.
-*   [ ] Tag the last commit in this phase `tested`
-
-
-## Phase 4: Deployment (tag name `deployed`)
-*(5% of your effort)*
-
-Deliver:
-
-*   [ ] Tag the last commit in this phase `deployed`
-*   [ ] Your repository is pushed to GitLab.
-*   [ ] **Verify** that your final commit was received by browsing to its project page on GitLab.
-    *   Ensure the project's URL is correct.
-    *   Review the project to ensure that all required files are present and in correct locations.
-    *   Check that unwanted files have not been included.
-    *   Make any final touches to documentation, including the Sprint Signature and this Plan.
-*   [ ] **Validate** that your submission is complete and correct by cloning it to a new location on your computer and re-running it.
-	*	Run your program from the command line so you can see how it will behave when your grader runs it.  **Running it in PyCharm is not good enough!**
-    *   Run through your test cases to avoid nasty surprises.
-    *   Check that your documentation files are all present.
-
-
-## Phase 5: Maintenance
-
-Spend a few minutes writing thoughtful answers to these questions.  They are meant to make you think about the long-term consequences of choices you made in this project.
-
-Deliver:
-
-*   [ ] Write brief and honest answers to these questions:
-    *   What parts of your program are sloppily written and hard to understand?
-        *   Are there parts of your program which you aren't quite sure how/why they work?
-        *   If a bug is reported in a few months, how long would it take you to find the cause?
-    *   Will your documentation make sense to...
-        *   ...anybody besides yourself?
-        *   ...yourself in six month's time?
-    *   How easy will it be to add a new feature to this program in a year?
-    *   Will your program continue to work after upgrading...
-        *   ...your computer's hardware?
-        *   ...the operating system?
-        *   ...to the next version of Python?
-*   [ ] Make one final commit and push your **completed** Software Development Plan to GitLab.
-*   [ ] Respond to the **Assignment Reflection Survey** on Canvas.
+I 

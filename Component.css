@@ -1,6 +1,6 @@
 body
 {
-    background-color: white;
+    background-color: pink;
 }
 
 .head-cen
@@ -178,6 +178,7 @@ body
     height: 2px;
     background-color: black;
     transition: all 0.4s ease-in-out;
+    animation: alternate;
   }
   
   .menu-icon-list 
@@ -191,6 +192,7 @@ body
     display: flex;
     flex-direction: row;
     background-color: red;
+
   }
   
   .nd-html-box
@@ -229,7 +231,7 @@ body
     margin: 20px;
 }
 
-/*The regular and fab buttons!*/
+/*The regular button!*/
 .the-buttons-text
 {
     font-size: large;
@@ -251,6 +253,14 @@ body
 .button1:hover
 {
     background-color: red;
+    animation: rotate .5s ease infinite;
+    /*You want animation? I give you animation*/
+}
+
+@keyframes rotate 
+{
+    from {transform: rotate(0turn)}
+    to {transform: rotate(5turn)}    
 }
 
 .button1[data-pressed = "true"]
@@ -278,7 +288,7 @@ body
 .button-css-box
 {
     width: 400px;
-    height: 500px;
+    height: 650px;
     border: 2px solid grey; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -310,10 +320,12 @@ body
     margin: 20px;
     border-radius: 64px;
     box-shadow: 2px 5px 7px rgba(0, 0, 3, 4);
+    transition: transform 1s ease-in;
 }
 .cancel-button:hover
 {
     background-color: rebeccapurple;
+    transform: scale(1.5);
 }
 
 .fab-html-box
@@ -331,7 +343,7 @@ body
 .fab-css-box
 {
     width: 400px;
-    height: 300px;
+    height: 325px;
     border: 2px solid grey; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -379,3 +391,105 @@ body
     flex-direction: column;
     margin: 20px;
 }
+
+/*Loading spinners!*/
+
+.lspin-text
+{
+    font-size: large;
+    margin: 20px;
+}
+
+.animated-loader
+{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: loading 0.75s ease infinite;
+}
+
+.animated-loader:hover
+{
+    background-color: blue;
+}
+
+@keyframes loading 
+{
+    from {transform: rotate(0turn)}
+    to {transform: rotate(1turn)}    
+}
+
+.text-loader
+{
+    color: blue;
+    font-size: larger;
+    animation: largest 1s ease infinite;
+    
+}
+
+@keyframes largest
+{
+    0%
+    {
+        width: 500px;
+    }
+}
+
+.last-spinner
+{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: lagging 0.75s ease infinite;
+}
+
+  @keyframes lagging 
+  {
+    0% 
+    {
+      transform: translateX(0) translateY(0);
+    }
+    25% 
+    {
+      transform: translateX(20px) translateY(0);
+    }
+    50% 
+    {
+      transform: translateX(20px) translateY(10px);
+    }
+    75% 
+    {
+      transform: translateX(10) translateY(10px);
+    }
+    100% 
+    {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  .spin-html-box
+{
+    width: 425px;
+    height: 175px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.spin-css-box
+{
+    width: 430px;
+    height: 1250px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+  

@@ -201,6 +201,13 @@ document.getElementById("button-css-code").innerText =
 .button1:hover
 {
     background-color: red;
+    animation: rotate .5s ease infinite;
+    /*You want animation? I give you animation*/
+}
+@keyframes rotate 
+{
+    from {transform: rotate(0turn)}
+    to {transform: rotate(5turn)}    
 }
 .button1[data-pressed = "true"]
 {
@@ -209,7 +216,8 @@ document.getElementById("button-css-code").innerText =
 .button1[data-pressed = "false"]
 {
     width: 150px;
-}`;
+}
+`;
 
 document.getElementById("button-js-code").innerText = 
 `const button1 = document.getElementById("button1");
@@ -249,10 +257,12 @@ document.getElementById("fab-css-code").innerText =
     margin: 20px;
     border-radius: 64px;
     box-shadow: 2px 5px 7px rgba(0, 0, 3, 4);
+    transition: transform 1s ease-in;
 }
 .cancel-button:hover
 {
     background-color: rebeccapurple;
+    transform: scale(1.5);
 }`;
 
 //image carousel
@@ -286,6 +296,87 @@ document.getElementById("img-css-code").innerText =
     margin: 20px;
 }`;
 
+//loading spinners!
+document.getElementById("spin-html-code").innerText = 
+`
+<div>
+<b class="lspin-text"> Three Loading Spinners!</b>
+</div>
+<div class="animated-loader"></div>
+<div class="text-loader"> 
+Hover over the rotating green square!</div>
+<div class="last-spinner"></div> `;
+
+document.getElementById("spin-css-code").innerText = 
+`
+.lspin-text
+{
+    font-size: large;
+    margin: 20px;
+}
+.animated-loader
+{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: loading 0.75s ease infinite;
+}
+.animated-loader:hover
+{
+    background-color: blue;
+}
+@keyframes loading 
+{
+    from {transform: rotate(0turn)}
+    to {transform: rotate(1turn)}    
+}
+.text-loader
+{
+    color: blue;
+    font-size: larger;
+    animation: largest 1s ease infinite;
     
+}
+@keyframes largest
+{
+    0%
+    {
+        width: 500px;
+    }
+}
+.last-spinner
+{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: lagging 0.75s ease infinite;
+}
+  @keyframes lagging 
+  {
+    0% 
+    {
+      transform: translateX(0) translateY(0);
+    }
+    25% 
+    {
+      transform: translateX(20px) translateY(0);
+    }
+    50% 
+    {
+      transform: translateX(20px) translateY(10px);
+    }
+    75% 
+    {
+      transform: translateX(10) translateY(10px);
+    }
+    100% 
+    {
+      transform: translateX(0) translateY(0);
+    }
+  }
+`;
+
 
 
