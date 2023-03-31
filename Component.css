@@ -1,6 +1,6 @@
 body
 {
-    background-color: blueviolet;
+    background-color: white;
 }
 
 .head-cen
@@ -123,7 +123,6 @@ body
     margin: 20px;
 }
 
-
 .menu-icon
  {
     display: flex;
@@ -132,14 +131,18 @@ body
     border: 0px;
     cursor: pointer;
   }
-  
-  
+
+  .menu-icon:hover
+  {
+    background-color: rebeccapurple;
+  }
+
   .menu-icon-box 
   {
     display: block;
     position: relative;
     height: 34px;
-    width: 30px;
+    width: 15px;
   }
   
   .menu-icon-inside 
@@ -150,7 +153,7 @@ body
     width: 30px;
     height: 2px;
     background-color: black;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .menu-icon-inside::before 
@@ -162,7 +165,7 @@ body
     width: 30px;
     height: 2px;
     background-color: black;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .menu-icon-inside::after 
@@ -181,14 +184,13 @@ body
   {
     display: none;
     list-style: none;
-   
   }
   
   .menu-icon-list.open 
   {
     display: flex;
     flex-direction: row;
-    
+    background-color: red;
   }
   
   .nd-html-box
@@ -219,6 +221,76 @@ body
 {
     width: 550px;
     height: 150px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/*The regular and fab buttons!*/
+.the-buttons-text
+{
+    font-size: large;
+}
+
+.the-button
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.button1
+{
+    background-color: blue;
+    margin: 20px;
+}
+
+.button1:hover
+{
+    background-color: red;
+}
+
+.button1[data-pressed = "true"]
+{
+    width: 300px;
+}
+
+.button1[data-pressed = "false"]
+{
+    width: 150px;
+}
+
+.button-html-box
+{
+    width: 400px;
+    height: 150px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.button-css-box
+{
+    width: 400px;
+    height: 500px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.button-js-box
+{
+    width: 550px;
+    height: 200px;
     border: 2px solid grey; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;

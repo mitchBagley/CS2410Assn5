@@ -53,7 +53,7 @@ const menuButton = document.getElementById("menu-icon");
 const menuButtonList = document.getElementById("menu-icon-list");
 menuButton.addEventListener("click", () =>
 {
-    menuButtonList.classList.toggle("menu-icon-list");
+    menuButtonList.classList.toggle("menu-icon-list"); 
 });
 
 document.getElementById("nd-html-code").innerText = 
@@ -145,6 +145,7 @@ document.getElementById("nd-css-code").innerText =
     display: none;
     list-style: none;
   }
+
   .menu-icon-list.open 
   {
     display: flex;
@@ -160,4 +161,64 @@ menuButton.addEventListener("click", () =>
     menuButtonList.classList.toggle("menu-icon-list");
 });`;
 
+//For the button
+const button1 = document.getElementById("button1");
 
+button1.addEventListener("click", (e) => 
+{
+    e.target.dataset.pressed = "true";
+});
+button1.addEventListener("mousedown", (e) => 
+{
+    e.target.dataset.pressed = "false";
+});
+
+document.getElementById("button-html-code").innerText = 
+`<div class="the-button"> 
+    <b> A regular button!</b>
+</div>
+<div>
+    <button class="button1" id="button1"> 
+        Hover and click me!</button>
+</div>`;
+
+document.getElementById("button-css-code").innerText = 
+`.the-buttons-text
+{
+    font-size: large;
+}
+.the-button
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.button1
+{
+    background-color: blue;
+    margin: 20px;
+}
+.button1:hover
+{
+    background-color: red;
+}
+.button1[data-pressed = "true"]
+{
+    width: 300px;
+}
+.button1[data-pressed = "false"]
+{
+    width: 150px;
+}`;
+
+document.getElementById("button-js-code").innerText = 
+`const button1 = document.getElementById("button1");
+
+button1.addEventListener("click", (e) => 
+{
+    e.target.dataset.pressed = "true";
+});
+button1.addEventListener("mousedown", (e) => 
+{
+    e.target.dataset.pressed = "false";
+});`;
