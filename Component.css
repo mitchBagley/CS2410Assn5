@@ -1,9 +1,7 @@
 body
 {
-    
+    background-color: blueviolet;
 }
-
-
 
 .head-cen
 {
@@ -21,6 +19,7 @@ body
     align-items: center;
 }
 
+/*For the nav bar*/
 .nav-bar
 {
     font-size: large;
@@ -32,7 +31,6 @@ body
     height: 50px;
     border: 2px solid grey;
     padding: 10px;
-    /* margin: 40px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     display: flex;
@@ -44,7 +42,6 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .nav-bar-links
@@ -94,10 +91,138 @@ body
     font-size: 15px;
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 
 .nav-bar-css-code
 {
     display: flex;
     justify-content: center;
+}
+
+
+/* for the navigation drawer*/
+.nav-draw
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.nav-draw-output
+{
+    width: 400px;
+    height: 100px;
+    border: 2px solid grey;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.menu-icon
+ {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+  }
+  
+  
+  .menu-icon-box 
+  {
+    display: block;
+    position: relative;
+    height: 34px;
+    width: 30px;
+  }
+  
+  .menu-icon-inside 
+  {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-icon-inside::before 
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-icon-inside::after 
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-icon-list 
+  {
+    display: none;
+    list-style: none;
+   
+  }
+  
+  .menu-icon-list.open 
+  {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .nd-html-box
+{
+    width: 400px;
+    height: 300px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.nd-css-box
+{
+    width: 400px;
+    height: 1425px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.nd-js-box
+{
+    width: 550px;
+    height: 150px;
+    border: 2px solid grey; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
