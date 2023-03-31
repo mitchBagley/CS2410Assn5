@@ -222,3 +222,70 @@ button1.addEventListener("mousedown", (e) =>
 {
     e.target.dataset.pressed = "false";
 });`;
+
+//The fab button
+document.getElementById("fab-html-code").innerText = 
+`<div> 
+<b class="fab">
+The Floating Action Button!</b>
+</div>
+<div>
+    <button class="cancel-button">
+        <span class="material-icons-outlined">
+        cancel
+        </span>
+    </button>
+</div>
+<div>`;
+
+document.getElementById("fab-css-code").innerText = 
+`.fab
+{
+    font-size: large;
+    margin: 20px;
+}
+.cancel-button
+{
+    margin: 20px;
+    border-radius: 64px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 3, 4);
+}
+.cancel-button:hover
+{
+    background-color: rebeccapurple;
+}`;
+
+//image carousel
+document.getElementById("img-html-code").innerText = 
+` 
+<div>
+<b class="img-carousel-text">An Image Carousel!</b>
+</div>
+<div class="img-carousel">
+<div class="carousel">
+  <img src="mntimage.jpg" alt="image 1">
+  <img src="mntimage2.jpg" alt="image 2">
+  <img src="mntimage3.jpg" alt="image 3">
+  <img src="sunset1.jpg" alt="image 4">
+  <img src="sunset2.jpg" alt="image 5">
+  <img src="sunset3.jpg" alt="image 6">
+</div>
+</div>`;
+
+document.getElementById("img-css-code").innerText = 
+`.img-carousel-text
+{
+    font-size: large;
+    margin: 20px;
+}
+.carousel
+{
+    display: flex;
+    flex-direction: row;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 20px;
+}`;
+
+    
+
+
